@@ -1,17 +1,29 @@
-# anime_catalog
+# 🎌 Лабораторная работа №4. Flutter: списки, модели данных и карточки
 
-A new Flutter project.
+## 👤 Информация о студенте
+- **Фамилия:** Шапкин
+- **Группа:** ИСП-232
+- **Дата сдачи:** 11.05.2026
 
-## Getting Started
+## 📚 Что изучили
+1. **Модели данных в Dart**: создание неизменяемых классов (`final`, `const`) с именованными обязательными параметрами для структурированного хранения объектов.
+2. **Эффективные списки**: применение `ListView.builder` с виртуализацией, чтобы рендерились только видимые элементы, что экономит память и повышает FPS.
+3. **Переиспользуемые виджеты**: вынесение карточки (`AnimeCard`) в отдельный файл, разделение UI на логические методы (`_buildPoster`, `_buildInfo` и т.д.) для читаемости кода.
+4. **Работа с ассетами и темизацией**: подключение папки изображений через `pubspec.yaml`, генерация глобальной цветовой схемы через `ColorScheme.fromSeed()` и использование `Material`-виджетов (`Card`, `AppBar`, `InkWell`).
+5. **Интерактивность и отладка**: обработка нажатий через `ScaffoldMessenger` для вывода `SnackBar`, а также базовый workflow Git/GitHub для версионирования проекта.
 
-This project is a starting point for a Flutter application.
+## 📸 Скриншот финального приложения
+![Скриншот работающего каталога](img/step4_SHapkin.png)
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🚀 Инструкция по запуску
+1. Убедитесь, что установлен [Flutter SDK](https://flutter.dev/docs/get-started/install) и настроена переменная окружения `flutter`.
+2. Клонируйте репозиторий (или перейдите в локальную папку проекта):
+   ```bash
+   cd Flutter_Lab4
+3. Установите все зависимости и зарегистрируйте ассеты:
+    ```bash
+    flutter pub get
+4. Запустите приложение (по умолчанию в браузере Chrome):
+    ```bash
+    flutter run -d chrome
+5. Для остановки приложения введите q в терминале.
